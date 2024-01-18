@@ -4,24 +4,42 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #A8D0E6;
+  --title: #F8E9A1;
+  --subtitle: #F76C6C;
+  --text: #24305E ;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255;    
+    --background-color: #24305E;
+    --title-color: #F8E9A1;
+    --subtitle-color: #F76C6C;
+    --text-color: #A8D0E6;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background-color: var(--background);  
 }
+
+.title {
+  color: var(--title);  
+  text-transform: capitalize;
+  font-size: 120px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+.subtitle {
+  color: var(--subtitle);
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 6px;
+}
+
+
+
+
