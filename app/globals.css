@@ -10,19 +10,27 @@
   --text: #24305E ;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;    
-    --background-color: #24305E;
-    --title-color: #F8E9A1;
-    --subtitle-color: #F76C6C;
-    --text-color: #A8D0E6;
+    --background: #24305E;
+    --title: #F8E9A1;
+    --subtitle: #F76C6C;
+    --text: #A8D0E6;
   }
-}
+} */
 
 body {
   color: var(--text);
   background-color: var(--background);  
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;    
+  --background: #24305E;
+  --title: #F8E9A1;
+  --subtitle: #F76C6C;
+  --text: #A8D0E6;
 }
 
 .title {
