@@ -1,10 +1,8 @@
-import Link from "next/link";
 
 export default function Competences() {
   return (
-    <main>
+    <div>
       <h1>Compétences</h1>
-      <Link href="/">Retour</Link>
-    </main>
+    </div>
   )
   }  

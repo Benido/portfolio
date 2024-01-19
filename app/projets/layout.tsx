@@ -15,6 +15,6 @@ export default function ProjetsLayout({
   children: React.ReactNode
 }) {
   return (
-    <section>{children}</section>
+    <section className='grow'>{children}</section>
   )
 }
