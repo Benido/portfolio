@@ -28,7 +28,7 @@ const Header = () => {
       </div> 
       <div className={isChecked ? 'transition-all flex flex-col items-end absolute' : ''}>
         <label 
-          className="btn btn-circle shadow-none m-3 swap swap-rotate sm:hidden bg-inherit border-transparent hover:bg-pale-yellow hover:border-pale-yellow hover:scale-110">  
+          className="btn btn-circle shadow-none m-3 swap swap-rotate md:hidden bg-inherit border-transparent hover:bg-pale-yellow hover:border-pale-yellow hover:scale-110">  
           {/* this hidden checkbox controls the state */}
             <input type="checkbox" onChange={handleChange} checked={isChecked}/>          
             {/* <!-- hamburger icon --> */}
@@ -36,7 +36,7 @@ const Header = () => {
             {/* <!-- close icon --> */}
             <svg className="swap-on fill-grapefruit" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>  
         </label>
-        <nav className={`${ isChecked ? 'flex flex-col items-end' : 'hidden'} sm:flex sm:h-full `}> 
+        <nav className={`${ isChecked ? 'flex flex-col items-end' : 'hidden'} md:flex md:h-full `}> 
             <Link className='subtitle m-4 transition-all hover:scale-110' href={'/projets'} onClick={handleClick}>PROJETS</Link>
             <Link className='subtitle m-4 transition-all hover:scale-110' href={'/competences'} onClick={handleClick}>COMPÉTENCES</Link>
             <Link className='subtitle m-4 transition-all hover:scale-110' href={'/contact'} onClick={handleClick}>CONTACT</Link>            

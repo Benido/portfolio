@@ -15,6 +15,6 @@ export default function ProjetsLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className='grow'>{children}</section>
+    <section className='container container-flex-centered'>{children}</section>
   )
 }

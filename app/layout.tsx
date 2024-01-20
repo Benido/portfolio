@@ -20,7 +20,7 @@ export default function RootLayout({
   return (    
     //suppressHydrationWarning necessary with Next Theme so React doen't send message if server and client render different content
       <html lang="en" suppressHydrationWarning>
-        <body className={`${roboto.className} min-h-screen flex flex-col`}>
+        <body className={`${roboto.className} box-border min-h-screen flex flex-col`}>
           <Providers>
             <Header />
             {children}

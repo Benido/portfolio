@@ -48,6 +48,12 @@ body {
   letter-spacing: 6px;
 }
 
+.container-flex-centered {
+  @apply flex grow flex-col items-start px-4 py-24 mx-auto
+}
 
-
-
+/* @media screen (width >= 768px){
+  .container {
+    max-width: 50vw
+  }
+} */
