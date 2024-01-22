@@ -22,11 +22,11 @@ const Header = () => {
 
   return (
     <div className='h-20 flex justify-end static'>       
-      <div className={isChecked ? 'backdrop-blur backdrop-brightness-25 absolute bottom-0 left-0 size-full' : ''}></div>
-      <div className={`${ isChecked ? 'absolute left-0' : ''} my-4 ml-4 mr-auto`}>
+      <div className={isChecked ? 'backdrop-blur backdrop-brightness-25 absolute bottom-0 left-0 size-full z-10' : ''}></div>
+      <div className={`${ isChecked ? 'absolute left-0' : ''} my-4 ml-4 mr-auto z-10`}>
         <Link className='text-4xl text-pale-yellow' href='/' onClick={handleClick}>RB</Link>
       </div> 
-      <div className={isChecked ? 'transition-all flex flex-col items-end absolute' : ''}>
+      <div className={isChecked ? 'transition-all flex flex-col items-end absolute z-10' : ''}>
         <label 
           className="btn btn-circle shadow-none m-3 swap swap-rotate md:hidden bg-inherit border-transparent hover:bg-pale-yellow hover:border-pale-yellow hover:scale-110">  
           {/* this hidden checkbox controls the state */}

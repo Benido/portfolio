@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
 const ThemeSwitch = () => {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(true)
   const [isChecked, setIsChecked] = useState(false)
 
   const { setTheme, resolvedTheme } = useTheme()
@@ -17,6 +17,8 @@ const ThemeSwitch = () => {
       setTheme('dark')
     }
   }  
+
+  if(!mounted) return null
 
   return (
     <label className="swap swap-rotate">

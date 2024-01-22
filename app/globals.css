@@ -34,11 +34,16 @@ body {
 }
 
 .title {
-  color: var(--title);  
-  text-transform: capitalize;
-  font-size: 120px;
+  color: var(--title); 
+  font-size: 7rem;
   font-weight: 700;
   letter-spacing: -3px;
+}
+
+@media (min-width: 768px){
+  .title {
+    font-size: 8rem
+  }
 }
 
 .subtitle {
@@ -52,8 +57,4 @@ body {
   @apply flex grow flex-col items-start px-4 py-24 mx-auto
 }
 
-/* @media screen (width >= 768px){
-  .container {
-    max-width: 50vw
-  }
-} */
+
