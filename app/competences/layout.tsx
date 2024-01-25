@@ -15,6 +15,6 @@ export default function CompetencesLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className='container container-flex-centered'>{children}</section>
+    <section className='container flex grow flex-col items-start px-4 py-24 mx-auto'>{children}</section>
   )
 }
