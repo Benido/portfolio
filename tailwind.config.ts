@@ -13,7 +13,8 @@ const config: Config = {
         'cool-blue' : '#A8D0E6',
         'serious-blue': '#24305E',
         'pale-yellow': '#F8E9A1',
-        'grapefruit': '#F76C6C'
+        'grapefruit': '#F76C6C',
+        'smoke-blue': '#374785'
       },
       lineHeight: {
         'big-title': '0.8'
