@@ -42,6 +42,8 @@ export default function Projets() {
           <div className='my-0 md:my-4 me-8 max-w-xl'>
             <h2 className="subtitle mb-3">Les Meubles de Néron - relooking de meubles</h2>
             <p className="text-xl/8 mb-3">Site vitrine pour une revalorisatrice de meubles d&apos;occasion</p>
+            <p>Back-end : PHP</p>
+            <p>Front-end : Wordpress - CSS</p>
           </div>
           <div className='flex justify-center my-12 lg:my-4'>      
             <Link href='https://www.les-meubles-de-neron.fr/' rel='noopener noreferrer' target='_blank'>

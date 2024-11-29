@@ -25,7 +25,7 @@ const Header = () => {
       <div className={isChecked ? 'backdrop-blur backdrop-brightness-25 absolute bottom-0 left-0 size-full z-10' : ''}></div>
       <div className={`${ isChecked ? 'absolute left-0' : ''} my-4 ml-4 mr-auto z-10`}>
         <Link className='text-4xl text-pale-yellow' href='/' onClick={handleClick}>
-          <Image className="object-contain p-2" src="/images/logos/pixel-avatar-logo.png" alt="logo" height={100} width={100}></Image>
+          <Image className="object-contain p-2 hover:animate-wiggle" src="/images/logos/pixel-avatar-logo.png" alt="logo" height={100} width={100}></Image>
         </Link>
       </div> 
       <div className={isChecked ? 'transition-all flex flex-col items-end absolute z-10' : ''}>
