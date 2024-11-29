@@ -40,16 +40,16 @@ export default function Projets() {
         </div> 
         <div className='grid grid-cols-1 lg:grid-cols-2 w-full my-8'>
           <div className='my-0 md:my-4 me-8 max-w-xl'>
-            <h2 className="subtitle mb-3">Laura Chaponot - restauratrice de céramique</h2>
-            <p className="text-xl/8 mb-3">Site vitrine pour une restauratrice d&apos;oeuvres d&apos;art</p>
+            <h2 className="subtitle mb-3">Les Meubles de Néron - relooking de meubles</h2>
+            <p className="text-xl/8 mb-3">Site vitrine pour une revalorisatrice de meubles d&apos;occasion</p>
           </div>
-          <div className='flex justify-center my-12 lg:my-4'>        
-            <Link href='' rel='noopener noreferrer' target='_blank'>
-              <div className='relative object-cover h-72 sm:h-96 w-96 sm:w-[32rem] mx-auto text-xl-center transition-all hover:scale-110'>
-                Incoming
+          <div className='flex justify-center my-12 lg:my-4'>      
+            <Link href='https://www.les-meubles-de-neron.fr/' rel='noopener noreferrer' target='_blank'>
+              <div className='relative object-cover h-72 sm:h-96 w-96 sm:w-[32rem] mx-auto transition-all hover:scale-110'>
+              <Image src="/images/meubles-de-neron.jpg" alt="capture d'écran du site Les Meubles de Néron" fill={true} ></Image>
               </div> 
             </Link>
-          </div>      
+          </div>           
         </div> 
     </div>
   )

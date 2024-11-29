@@ -3,6 +3,7 @@
 import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import ThemeSwitch from './ThemeSwitch'
+import Image from 'next/image'
 
 const Header = () => {  
   
@@ -23,7 +24,9 @@ const Header = () => {
     <div className='h-20 flex justify-end static'>       
       <div className={isChecked ? 'backdrop-blur backdrop-brightness-25 absolute bottom-0 left-0 size-full z-10' : ''}></div>
       <div className={`${ isChecked ? 'absolute left-0' : ''} my-4 ml-4 mr-auto z-10`}>
-        <Link className='text-4xl text-pale-yellow' href='/' onClick={handleClick}>RB</Link>
+        <Link className='text-4xl text-pale-yellow' href='/' onClick={handleClick}>
+          <Image className="object-contain p-2" src="/images/logos/pixel-avatar-logo.png" alt="logo" height={100} width={100}></Image>
+        </Link>
       </div> 
       <div className={isChecked ? 'transition-all flex flex-col items-end absolute z-10' : ''}>
         <label 
@@ -39,7 +42,7 @@ const Header = () => {
             <Link className='subtitle m-4 transition-all hover:scale-110' href={'/projets'} onClick={handleClick}>PROJETS</Link>
             <Link className='subtitle m-4 transition-all hover:scale-110' href={'/competences'} onClick={handleClick}>COMPÉTENCES</Link>
             <Link className='subtitle m-4 transition-all hover:scale-110' href={'/contact'} onClick={handleClick}>CONTACT</Link>            
-            <div>
+            <div className='my-4 mr-4 flex'>
               <ThemeSwitch />
             </div>
         </nav>  

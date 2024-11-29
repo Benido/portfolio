@@ -4,6 +4,9 @@ export default function Competences() {
   return (
     <div className="flex flex-col items-start">
         <h1 className="title leading-big-title my-8 ">Compé<wbr/>tences</h1>
+        <p className="text-2xl/loose my-5"> J&apos;ai effectué une reconversion professionnelle en 2022-2023 et décroché mon titre professionnel Développeur web et web mobile en Octobre 2023 en suivant le cursus <b>Développeur web Full-stack</b> de l&apos;école en ligne&nbsp;
+        <a className="text-grapefruit underline" href="https://www.studi.com/fr" rel="noopener noreferrer" target="_blank">Studi</a>. 
+        </p>
         <h2 className="subtitle mt-8 mb-4">Front-end</h2>
         {/* [&_*>div] cible les div dans les descendants directs */}
         <ul role="list" className="flex flex-wrap *:text-center *:m-4 [&_*>div]:h-24 [&_*>div]:min-w-24 [&_*>div]:relative [&_*>p]:mt-2">
